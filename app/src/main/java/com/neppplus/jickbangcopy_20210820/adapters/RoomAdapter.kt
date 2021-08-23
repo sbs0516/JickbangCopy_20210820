@@ -37,6 +37,8 @@ class RoomAdapter(
 
         descriptionTxt.text = data.description
 
+        addressAndFloorTxt.text = "${data.address},${data.getFormattedFloor()}"
+
         return row
     }
 
